@@ -1,15 +1,19 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import Hamburger from './Hamburger.astro';
 ---
 
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="links-menu">
+		<Hamburger></Hamburger>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
+		</div>
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -62,6 +66,7 @@ import { SITE_TITLE } from '../consts';
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0.5rem 0 0;
 	}
 	nav a {
 		padding: 1em 0.5em;
@@ -75,7 +80,7 @@ import { SITE_TITLE } from '../consts';
 	}
 	.social-links,
 	.social-links a {
-		display: flex;
+		display: none;
 	}
 	@media (max-width: 720px) {
 		.social-links {

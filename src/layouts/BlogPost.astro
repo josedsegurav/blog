@@ -4,10 +4,12 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import '../styles/global.css';
+
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
 ---
 
 <html lang="en">
@@ -73,6 +75,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 								)
 							}
 						</div>
+						<p>	{tags && tags.length > 0 ? tags.map((tag) => (
+							<a href={`/tags/${tag}/`} class="tag">{tag}</a>
+						)) : <span>No tags available</span>}
+						</p>
 						<h1>{title}</h1>
 						<hr />
 					</div>
