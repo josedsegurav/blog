@@ -3,55 +3,124 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Code } from 'astro:components';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			ul li {
+				width: calc(50% - 1rem);
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li:first-child {
+				width: 100%;
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+			ul li:first-child img {
+				width: 100%;
+			}
+			ul li:first-child .title {
+				font-size: 2.369rem;
+			}
+			ul li img {
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+			}
+			ul li a {
+				display: block;
+			}
+			.title {
+				margin: 0;
+				color: rgb(var(--black));
+				line-height: 1;
+			}
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+			ul li a:hover h4,
+			ul li a:hover .date {
+				color: rgb(var(--accent));
+			}
+			ul a:hover img {
+				box-shadow: var(--box-shadow);
+			}
+			.tags {
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+			}
+			@media (max-width: 720px) {
+				ul {
+					gap: 0.5em;
+				}
+				ul li {
+					width: 100%;
+					text-align: center;
+				}
+				ul li:first-child {
+					margin-bottom: 0;
+				}
+				ul li:first-child .title {
+					font-size: 1.563em;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>Welcome to ConsoleLogLife</h1>
-
-			<Code code={`console.log("Hello World, Hello Life");`} lang="js" theme="dark-plus"/>
-
-			<p>
-				Ever wondered what happens when you try debugging life while learning to code? Welcome to 
-				ConsoleLogLife, where personal growth meets programming challenges, and life transformations 
-				are documented in verbose mode.
-			</p>
-			<p>
-				Here, you'll find raw, unfiltered stories about navigating career shifts, embracing major life 
-				changes, and the beautiful chaos of learning to code while adulting. No sanitized success stories, 
-				just honest logs of failures, victories, and the orange Tic Tac-fueled moments in between.
-			</p>
-			<p>What to expect:</p>
-			<ul>
-				<li>Late-night coding adventures and their surprising life lessons</li>
-				<li>Real talk about career transitions and starting over</li>
-				<li>Stories about taking calculated risks and making life-changing decisions</li>
-				<li>Technical struggles and breakthroughs</li>
-				<li>The human side of professional transformation</li>
-			</ul>
-			<p>
-				This isn't your typical tech blog or lifestyle journal – it's a debug console for life's 
-				compilation errors and runtime exceptions. Whether you're contemplating a similar journey 
-				or just curious about someone else's process, you're welcome to explore these logs.
-			</p>
-			<Code code={
-			`try {
-    life.execute(dreams);
-} catch (reality) {
-    learn.adapt.overcome();
-}`} lang="js" theme="dark-plus"/>
-			<p>Let's compile this journey together.</p>
+			<section>
+				<ul>
+					{
+						posts.slice(0, 3).map((post) => (
+							<li>
+								<a href={`/blog/${post.id}/`}>
+									<img width={720} height={360} src={post.data.heroImage} alt="" />
+									<h4 class="title">{post.data.title}</h4>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</a>
+								<div class="tags">
+									{
+										post.data.tags && post.data.tags.length > 0
+											? post.data.tags.map((tag, index) => (
+												<a href={`/tags/${tag}/`} class="tag">{tag}</a>
+											))
+											: <span>No tags available</span>
+									}
+								</div>
+							</li>
+						))
+					}
+				</ul>
+			</section>
 		</main>
 		<Footer />
-		<script>
-			import "../scripts/menu";
-		  </script>
 	</body>
 </html>

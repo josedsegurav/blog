@@ -75,10 +75,10 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 								)
 							}
 						</div>
-						<p>	{tags && tags.length > 0 ? tags.map((tag) => (
+						<div class="tags">	{tags && tags.length > 0 ? tags.map((tag) => (
 							<a href={`/tags/${tag}/`} class="tag">{tag}</a>
 						)) : <span>No tags available</span>}
-						</p>
+						</div>
 						<h1>{title}</h1>
 						<hr />
 					</div>
