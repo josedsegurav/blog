@@ -1,0 +1,23 @@
+---
+import BlogIndex from "../../layouts/BlogIndex.astro";
+import { getCollection } from "astro:content";
+
+
+const allPosts = await getCollection('blog');
+const tags = [...new Set(allPosts.map((post: any) => post.data.tags).flat())];
+
+const title = "Tags Index"
+---
+
+<BlogIndex
+    title={title}
+>
+<div class="index-tags">{tags.map((tag) => <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>)}</div>
+
+</BlogIndex>
+
+<style>
+    a {
+      color: #00539F;
+    }
+  </style>

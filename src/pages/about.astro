@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Code } from 'astro:components';
+import '@fontsource-variable/manrope';
 ---
 
 <!doctype html>
@@ -13,7 +14,7 @@ import { Code } from 'astro:components';
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main id="about">
 			<h1>Welcome to ConsoleLogLife</h1>
 
 			<Code code={`console.log("Hello World, Hello Life");`} lang="js" theme="dark-plus"/>

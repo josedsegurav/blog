@@ -1,11 +1,11 @@
 ---
-import BlogPost from '../../layouts/BlogPost.astro';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import FormattedDate from '../../components/FormattedDate.astro';
+import '@fontsource-variable/manrope';
 
 export async function getStaticPaths() {
     const allPosts = await getCollection('blog');
@@ -141,5 +141,8 @@ const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
 			</section>
 		</main>
 		<Footer />
+        <script>
+			import "../scripts/menu";
+		  </script>
 	</body>
 </html>
