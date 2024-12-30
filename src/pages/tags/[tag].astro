@@ -8,7 +8,9 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import '@fontsource-variable/manrope';
 
 export async function getStaticPaths() {
-    const allPosts = await getCollection('blog');
+    const allPosts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
     
   return [
     { params: { tag: "Web Dev" }, props: {posts: allPosts} },
@@ -88,11 +90,7 @@ const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
-			.tags {
-				display: flex;
-				justify-content: center;
-				gap: 10px;
-			}
+
 			@media (max-width: 720px) {
 				ul {
 					gap: 0.5em;
@@ -143,7 +141,7 @@ const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
 		</main>
 		<Footer />
         <script>
-			import "../scripts/menu";
+			import "../../scripts/menu";
 		  </script>
 	</body>
 </html>
