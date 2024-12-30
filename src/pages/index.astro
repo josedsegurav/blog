@@ -9,7 +9,7 @@ import { Code } from 'astro:components';
 import '@fontsource-variable/manrope';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+	(a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 const tags = [...new Set(posts.map((post: any) => post.data.tags).flat())];
 
@@ -32,7 +32,7 @@ const tags = [...new Set(posts.map((post: any) => post.data.tags).flat())];
 				</div>
 				<ul>
 					{
-						posts.slice(0, 3).map((post) => (
+						posts.slice(0, 3).map((post: any) => (
 							<li>
 								<a href={`/blog/${post.id}/`}>
 									<img width={720} height={360} src={post.data.heroImage} alt="" />
@@ -44,7 +44,7 @@ const tags = [...new Set(posts.map((post: any) => post.data.tags).flat())];
 								<div class="tags">
 									{
 										post.data.tags && post.data.tags.length > 0
-											? post.data.tags.map((tag, index) => (
+											? post.data.tags.map((tag: any) => (
 												<a href={`/tags/${tag}/`} class="tag">{tag}</a>
 											))
 											: <span>No tags available</span>
