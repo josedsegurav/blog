@@ -1,19 +1,27 @@
 ---
-title: 'Second post'
+title: 'First Steps in a New City'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 16 2022'
-heroImage: '/blog-placeholder-4.jpg'
+pubDate: 'Dec 16 2024'
+heroImage: '/2.png'
 tags: 
-    - 'Akira'
-    - 'setbacks'
+    - 'Life Changes'
+    - 'Dog Life'
+    - 'Transition'
+    - 'New Home'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+You know that mixture of excitement and nervousness you get before opening a gift? That's exactly how I felt stepping off the plane into our new city. Everything was wrapped in possibility, though I had no idea what to expect once we started unwrapping this new life we'd chosen.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Our first home was a downtown Airbnb with views that belonged on a postcard. The weather welcomed us gently – not the blast of heat we'd prepared ourselves for, but something kinder, like the city was trying to ease us in. Though I have to say, downtown life came with its own reality checks. Seeing so many homeless people on our daily walks was sobering, a stark reminder that every city has its challenges and stories that need telling.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+If there's one thing that makes a new city feel less strange, it's having friends already settled in. We hit the friend lottery here – they've been our living, breathing guidebook, helping us navigate everything from grocery shopping to hauling our ridiculously heavy suitcases. Every "Oh, you should try this place!" and "Let me show you how this works" has been worth its weight in gold. I'm not sure what we did to deserve such amazing friends, but I'm grateful for every moment they've spent helping us find our feet.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+House hunting turned out to be its own adventure. Try finding an apartment that checks all these boxes: must love dogs, perfect location, available right now, and matches our somewhat particular taste. It's like trying to find the perfect pair of jeans, except the jeans cost thousands of dollars and you have to live in them. We walked so many neighborhoods that our feet probably deserve their own thank-you note. But hey, at least we got to know the city intimately, one blistered toe at a time.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+Our dog has been the unexpected star of this whole transition. Watching him discover city life has been better than any reality show. Every new smell is breaking news, every passing dog a potential best friend, and every squirrel apparently a personal challenge to his dignity. He's adapting to city life with the kind of enthusiasm only dogs can muster, though I'm pretty sure he's still confused about why these squirrels seem braver than the ones back home.
+
+Starting college felt like opening a new chapter in a book – everything fresh and full of possibility, slightly daunting but exciting. The people I've met so far seem to be on similar journeys, each with their own story of how they ended up here, making every conversation feel like discovering a new favorite song.
+
+Surprisingly, we haven't been as homesick as we expected. Maybe we're still riding the wave of newness, or maybe we're just too busy figuring out which grocery store has the best prices to notice. I know it'll hit eventually – probably when I least expect it – but for now, I'm grateful for this honeymoon period with our new city.
+
+As I write this, I'm looking out at a skyline that's starting to feel familiar. There's still so much to figure out, so many corners of the city to explore, and probably a thousand more times our dog will try to chase those surprisingly confident squirrels. But for now, everything feels exactly where it should be – under construction, but with a solid foundation.

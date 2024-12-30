@@ -2,7 +2,7 @@
 title: 'The Journey So Far'
 description: "A raw and honest reflection of an average life that took an unexpected turn. From the monotony of a stable job to late-night coding sessions fueled by orange Tic Tacs, this post chronicles the journey of two people who decided to rewrite their life's script. Follow along as they navigate through mortgage payments, pandemic challenges, and the exciting yet terrifying decision to start fresh in a new country."
 pubDate: 'Dec 8 2024'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '/1.png'
 tags: 
     - 'Life Changes'
     - 'Personal Growth'

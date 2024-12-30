@@ -11,13 +11,14 @@ export async function getStaticPaths() {
     const allPosts = await getCollection('blog');
     
   return [
-    { params: { tag: "Technical" }, props: {posts: allPosts} },
-    { params: { tag: "Ecuador" }, props: {posts: allPosts} },
+    { params: { tag: "Web Dev" }, props: {posts: allPosts} },
+    { params: { tag: "Back Home" }, props: {posts: allPosts} },
     { params: { tag: "Life Changes" }, props: {posts: allPosts} },
-    { params: { tag: "Akira" }, props: {posts: allPosts} },
+    { params: { tag: "Dog Life" }, props: {posts: allPosts} },
     { params: { tag: "Personal Growth" }, props: {posts: allPosts} },
     { params: { tag: "Emotional" }, props: {posts: allPosts} },
     { params: { tag: "Transition" }, props: {posts: allPosts} },
+	{ params: { tag: "New Home" }, props: {posts: allPosts} },
   ];
 }
 
