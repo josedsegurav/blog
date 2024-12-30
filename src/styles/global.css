@@ -504,7 +504,8 @@ footer .social-links a:hover {
   .dark #about,
   .dark #blog .title,
   .dark #blog span
-  .dark footer {
+  .dark footer,
+  .dark #entry h2 {
 	color: #fff;
   }
 
