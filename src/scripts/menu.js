@@ -1,6 +1,8 @@
-document.querySelector('.hamburger')?.addEventListener('click', () => {
-    document.querySelector('.internal-links')?.classList.toggle('expanded');
-    document.querySelector('.third')?.classList.toggle('close');
-    document.querySelector('.right-close-menu')?.classList.toggle('close-right');
-    document.querySelector('.left-close-menu')?.classList.toggle('close-left');
+document.querySelector(".hamburger")?.addEventListener("click", () => {
+  document.querySelector("nav")?.classList.toggle("nav-column");
+  document.querySelector(".internal-links")?.classList.toggle("expanded");
+  document.querySelector(".close-icon")?.classList.toggle("show-icon");
+  document.querySelectorAll(".menu-line")?.forEach(line => {
+    line.classList.toggle("close");
   });
+});

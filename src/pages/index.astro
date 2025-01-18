@@ -2,11 +2,13 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import HeaderLink from '../components/HeaderLink.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Code } from 'astro:components';
 import '@fontsource-variable/manrope';
+import '@fontsource/ubuntu';
 
 const posts = (await getCollection('blog')).sort(
 	(a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -19,9 +21,6 @@ const tags = [...new Set(posts.map((post: any) => post.data.tags).flat())];
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			
-		</style>
 	</head>
 	<body>
 		<Header />
@@ -36,7 +35,7 @@ const tags = [...new Set(posts.map((post: any) => post.data.tags).flat())];
 							<li>
 								<a href={`/blog/${post.id}/`}>
 									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
+									<h3 class="title">{post.data.title}</h3>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
@@ -54,10 +53,6 @@ const tags = [...new Set(posts.map((post: any) => post.data.tags).flat())];
 						))
 					}
 				</ul>
-				<div class="tags-list">
-					<h3>Tags</h3>
-					<div class="index-tags">{tags.map((tag) => <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>)}</div>
-				</div>
 			</section>
 		</main>
 		<Footer />
