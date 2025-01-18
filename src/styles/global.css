@@ -87,6 +87,9 @@ a {
 a:hover {
   color: var(--dark-secondary);
 }
+.dark a:hover {
+	color: var(--dark-primary);
+}
 p {
   margin-bottom: 1em;
 }
@@ -532,11 +535,23 @@ body.dark {
 .dark #entry .prose,
 .dark #home .title,
 .dark #home h3,
+.dark #home .date,
 .dark #about,
 .dark #blog .title,
 .dark #blog span,
 .dark .tags a {
   color: var(--dark-content);
+}
+
+.dark #entry .prose:hover,
+.dark #home .title:hover,
+.dark #home h3:hover,
+.dark #home .date:hover,
+.dark #about:hover,
+.dark #blog .title:hover,
+.dark #blog span:hover,
+.dark .tags a:hover {
+	color: var(--dark-primary);
 }
 
 .dark h2 .logo,

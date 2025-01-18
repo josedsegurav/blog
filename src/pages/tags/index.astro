@@ -8,11 +8,12 @@ const tags = [...new Set(allPosts.map((post: any) => post.data.tags).flat())];
 
 const title = "Tags Index"
 ---
-<main id="tags">
+
 <BlogIndex
     title={title}
 >
+<main id="tags"></main>
 <div class="index-tags">{tags.map((tag) => <a class="tag" href={`/tags/${tag}`}>{tag}</a>)}</div>
-
-</BlogIndex>
 </main>
+</BlogIndex>
+
