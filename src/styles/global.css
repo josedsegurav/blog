@@ -116,93 +116,98 @@ code {
   background-color: rgb(var(--gray-light));
   border-radius: 2px;
 }
-#console .line {
-  display: flex;
+@media (min-width: 765px) {
+	#console .line {
+		display: flex;
+	  }
+	  #console .line span {
+		border: none;
+		white-space: nowrap;
+		overflow: hidden;
+	  }
+	  #console .line span:nth-child(1) {
+		width: 12%;
+		animation: console 1s steps(40) 1s normal both;
+	  }
+	  #console .line span:nth-child(2) {
+		width: 1.5%;
+		animation: dot 0.25s steps(40) 2s normal both;
+	  }
+	  #console .line span:nth-child(3) {
+		width: 5%;
+		animation: log 0.25s steps(40) 2.5s normal both;
+	  }
+	  #console .line span:nth-child(4) {
+		width: 2%;
+		animation: bracket 0.25s steps(40) 3s normal both;
+	  }
+	  #console .line span:nth-child(5) {
+		width: 42%;
+		animation: hello 3s steps(40) 3.25s normal both;
+	  }
+	  #console .line span:nth-child(6) {
+		width: 3%;
+		animation: end 0.25s steps(40) 6.5s normal both,
+					blink 0.75s steps(40) infinite;
+	  }
+	  @keyframes console {
+		from {
+		  width: 0;
+		}
+		to {
+		  width: 12%;
+		}
+	  }
+	  @keyframes dot {
+		from {
+		  width: 0;
+		}
+		to {
+		  width: 1.5%;
+		}
+	  }
+	  @keyframes log {
+		from {
+		  width: 0;
+		}
+		to {
+		  width: 5%;
+		}
+	  }
+	  @keyframes bracket {
+		from {
+		  width: 0;
+		}
+		to {
+		  width: 2%;
+		}
+	  }
+	  @keyframes hello {
+		  from {
+			width: 0;
+		  }
+		  to {
+			width: 42%;
+		  }
+		}
+	  
+	  @keyframes end {
+		0% {
+		  width: 0;
+		}
+	  
+		100% {
+		  width: 3%;
+		}
+	  }
+	  @keyframes blink {
+		  from{border-right: 0.15em solid var(--dark-primary);}
+		  to{border-right: transparent;}
+	  }
+		  
 }
-#console .line span {
-  border: none;
-  white-space: nowrap;
-  overflow: hidden;
-}
-#console .line span:nth-child(1) {
-  width: 12%;
-  animation: console 1s steps(40) 1s normal both;
-}
-#console .line span:nth-child(2) {
-  width: 1.5%;
-  animation: dot 0.25s steps(40) 2s normal both;
-}
-#console .line span:nth-child(3) {
-  width: 5%;
-  animation: log 0.25s steps(40) 2.5s normal both;
-}
-#console .line span:nth-child(4) {
-  width: 2%;
-  animation: bracket 0.25s steps(40) 3s normal both;
-}
-#console .line span:nth-child(5) {
-  width: 42%;
-  animation: hello 3s steps(40) 3.25s normal both;
-}
-#console .line span:nth-child(6) {
-  width: 3%;
-  animation: end 0.25s steps(40) 6.5s normal both,
-  			blink 0.75s steps(40) infinite;
-}
-@keyframes console {
-  from {
-    width: 0;
-  }
-  to {
-    width: 12%;
-  }
-}
-@keyframes dot {
-  from {
-    width: 0;
-  }
-  to {
-    width: 1.5%;
-  }
-}
-@keyframes log {
-  from {
-    width: 0;
-  }
-  to {
-    width: 5%;
-  }
-}
-@keyframes bracket {
-  from {
-    width: 0;
-  }
-  to {
-    width: 2%;
-  }
-}
-@keyframes hello {
-	from {
-	  width: 0;
-	}
-	to {
-	  width: 42%;
-	}
-  }
 
-@keyframes end {
-  0% {
-    width: 0;
-  }
 
-  100% {
-    width: 3%;
-  }
-}
-@keyframes blink {
-	from{border-right: 0.15em solid var(--dark-primary);}
-	to{border-right: transparent;}
-}
 
 pre {
   padding: 1.5em;
