@@ -3,6 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 import Hamburger from "./Hamburger.astro";
 import ThemeIcon from "./ThemeIcon.astro";
+
 ---
 
 <header>
@@ -11,10 +12,10 @@ import ThemeIcon from "./ThemeIcon.astro";
     <div class="links-menu">
       <ThemeIcon />
       <div class="internal-links">
-        <HeaderLink href="/">Home</HeaderLink>
-        <HeaderLink href="/blog">Blog</HeaderLink>
-        <HeaderLink href="/about">About</HeaderLink>
-        <HeaderLink href="/tags">Tags</HeaderLink>
+        <HeaderLink class="animate__animated animate__bounceIn" href="/">Home</HeaderLink>
+        <HeaderLink class="animate__animated animate__bounceIn animate__delay-1s" href="/blog">Blog</HeaderLink>
+        <HeaderLink class="animate__animated animate__bounceIn animate__delay-1s" href="/about">About</HeaderLink>
+        <HeaderLink class="animate__animated animate__bounceIn animate__delay-1s" href="/tags">Tags</HeaderLink>
       </div>
       <Hamburger />
     </div>

@@ -1,19 +1,18 @@
 ---
 import BlogIndex from "../../layouts/BlogIndex.astro";
 import { getCollection } from "astro:content";
+import 'animate.css';
 
 
 const allPosts = await getCollection('blog');
 const tags = [...new Set(allPosts.map((post: any) => post.data.tags).flat())];
-
 const title = "Tags Index"
 ---
 
 <BlogIndex
     title={title}
 >
-<main id="tags"></main>
-<div class="index-tags">{tags.map((tag) => <a class="tag" href={`/tags/${tag}`}>{tag}</a>)}</div>
+<main id="tags">
+<div class="index-tags">{tags.map((tag: any) => <a class="tag animate__animated animate__fadeInUp" href={`/tags/${tag}`}>{tag}</a>)}</div>
 </main>
 </BlogIndex>
-

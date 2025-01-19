@@ -88,7 +88,7 @@ a:hover {
   color: var(--dark-secondary);
 }
 .dark a:hover {
-	color: var(--dark-primary);
+  color: var(--dark-primary);
 }
 p {
   margin-bottom: 1em;
@@ -116,6 +116,94 @@ code {
   background-color: rgb(var(--gray-light));
   border-radius: 2px;
 }
+#console .line {
+  display: flex;
+}
+#console .line span {
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#console .line span:nth-child(1) {
+  width: 12%;
+  animation: console 1s steps(40) 1s normal both;
+}
+#console .line span:nth-child(2) {
+  width: 1.5%;
+  animation: dot 0.25s steps(40) 2s normal both;
+}
+#console .line span:nth-child(3) {
+  width: 5%;
+  animation: log 0.25s steps(40) 2.5s normal both;
+}
+#console .line span:nth-child(4) {
+  width: 2%;
+  animation: bracket 0.25s steps(40) 3s normal both;
+}
+#console .line span:nth-child(5) {
+  width: 42%;
+  animation: hello 3s steps(40) 3.25s normal both;
+}
+#console .line span:nth-child(6) {
+  width: 3%;
+  animation: end 0.25s steps(40) 6.5s normal both,
+  			blink 0.75s steps(40) infinite;
+}
+@keyframes console {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12%;
+  }
+}
+@keyframes dot {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1.5%;
+  }
+}
+@keyframes log {
+  from {
+    width: 0;
+  }
+  to {
+    width: 5%;
+  }
+}
+@keyframes bracket {
+  from {
+    width: 0;
+  }
+  to {
+    width: 2%;
+  }
+}
+@keyframes hello {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 42%;
+	}
+  }
+
+@keyframes end {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 3%;
+  }
+}
+@keyframes blink {
+	from{border-right: 0.15em solid var(--dark-primary);}
+	to{border-right: transparent;}
+}
+
 pre {
   padding: 1.5em;
   border-radius: 8px;
@@ -124,10 +212,10 @@ pre > code {
   all: unset;
 }
 @media (max-width: 720px) {
-	code {
-	  font-size: 0.8rem;
-	}
+  code {
+    font-size: 0.8rem;
   }
+}
 blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
@@ -150,7 +238,10 @@ hr {
 header {
   margin: 0;
   padding: 0 1em;
-  box-shadow: 0 2px 8px rgba(var(--black), 5%);
+  box-shadow: 0 2px 8px var(--dark-secondary);
+}
+.dark header {
+  box-shadow: 0 2px 8px var(--dark-secondary);
 }
 header h1 {
   font-family: "Ubuntu", sans-serif;
@@ -175,10 +266,10 @@ header nav a {
 }
 header nav a.active {
   text-decoration: none;
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--dark-primary);
 }
 .nav-column {
-	flex-direction: column;
+  flex-direction: column;
 }
 header .social-links,
 header .social-links a {
@@ -220,7 +311,15 @@ header .social-links a {
   display: none;
   margin: 0;
 }
-
+.animate__animated.animate__bounceIn:nth-child(2) {
+  --animate-delay: 0.1s;
+}
+.animate__animated.animate__bounceIn:nth-child(3) {
+  --animate-delay: 0.3s;
+}
+.animate__animated.animate__bounceIn:nth-child(4) {
+  --animate-delay: 0.5s;
+}
 .expanded {
   display: block;
 }
@@ -233,7 +332,7 @@ header .social-links a {
 .close-left {
   rotate: 295deg;
   position: absolute;
-}	
+}
 
 .hamburger {
   padding-right: 20px;
@@ -249,15 +348,15 @@ header .social-links a {
 }
 
 .close-icon {
-	display: none;
-	cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 .close-icon path {
-	stroke: var(--dark-bg);
+  stroke: var(--dark-bg);
 }
 
 .show-icon {
-	display: block;
+  display: block;
 }
 
 .close {
@@ -328,7 +427,7 @@ header .social-links a {
   align-items: center;
 }
 #home .tags-list h3:hover {
-	color: var(--dark-primary);
+  color: var(--dark-primary);
 }
 @media (max-width: 720px) {
   #home ul {
@@ -346,11 +445,11 @@ header .social-links a {
   }
 }
 .tag-header {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .tag-header h3:hover {
-	color: var(--dark-primary);
+  color: var(--dark-primary);
 }
 #about h1 {
   font-family: "Atkinson";
@@ -444,7 +543,7 @@ header .social-links a {
 }
 
 .tag {
-	color: var(--dark-secondary);
+  color: var(--dark-secondary);
   margin: 0.25em;
   border: solid 1px #f0e6e3;
   border-radius: 0.5em;
@@ -454,8 +553,8 @@ header .social-links a {
 }
 
 .tag:hover {
-	background-color: var(--dark-secondary);
-	color: var(--dark-content);
+  background-color: var(--dark-secondary);
+  color: var(--dark-content);
 }
 
 #entry main {
@@ -496,8 +595,8 @@ header .social-links a {
   font-style: italic;
 }
 #tagindex {
-	margin-top: 1rem;
-	text-align: center;
+  margin-top: 1em;
+  text-align: center;
 }
 
 footer {
@@ -539,19 +638,19 @@ body.dark {
 .dark #about,
 .dark #blog .title,
 .dark #blog span,
-.dark .tags a {
+.dark #blog .date,
+.dark .tags a,
+.dark .tag {
   color: var(--dark-content);
 }
 
-.dark #entry .prose:hover,
 .dark #home .title:hover,
 .dark #home h3:hover,
 .dark #home .date:hover,
-.dark #about:hover,
 .dark #blog .title:hover,
 .dark #blog span:hover,
 .dark .tags a:hover {
-	color: var(--dark-primary);
+  color: var(--dark-primary);
 }
 
 .dark h2 .logo,
@@ -563,13 +662,16 @@ body.dark {
 }
 
 .dark .close-icon path {
-	stroke: var(--dark-primary);
+  stroke: var(--dark-primary);
 }
 
-.dark .tags a {
+.dark .tags a,
+.dark .tag {
   background-color: var(--dark-secondary);
 }
 
-.dark .menu-line {
+.dark .menu-line,
+.dark .tags a:hover,
+.dark .tag:hover {
   background-color: var(--dark-content);
 }
