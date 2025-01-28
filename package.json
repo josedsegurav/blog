@@ -11,12 +11,18 @@
   "dependencies": {
     "@astrojs/mdx": "^4.0.1",
     "@astrojs/preact": "^4.0.0",
+    "@astrojs/react": "^4.1.6",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "@fontsource-variable/manrope": "^5.1.1",
     "@fontsource/ubuntu": "^5.1.1",
+    "@google/generative-ai": "^0.21.0",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
     "animate.css": "^4.1.1",
     "astro": "^5.0.2",
-    "preact": "^10.25.1"
+    "preact": "^10.25.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

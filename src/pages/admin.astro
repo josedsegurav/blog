@@ -1,0 +1,39 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Code } from 'astro:components';
+import '@fontsource-variable/manrope';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main id="about">
+			<h1>Blog Admin</h1>
+            <h2>Create Entry</h2>
+            <form action="/admin" method="post">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required/>
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" required/>
+                <label for="pubDate">Publication Date</label>
+                <input type="date" id="pubDate" name="pubDate" required/>
+                <label for="heroImage">Hero Image</label>
+                <button type="button">Upload</button>
+                <label for="tags">Tags</label>
+                <input type="text" id="tags" name="tags"/>
+                <button type="submit">Create</button>
+            </form>
+		</main>
+		<Footer />
+		<script>
+			import "../scripts/menu";
+		  </script>
+	</body>
+</html>

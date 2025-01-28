@@ -5,8 +5,10 @@ import sitemap from '@astrojs/sitemap';
 
 import preact from '@astrojs/preact';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
     site: 'https://consoleloglife.netlify.app/',
-    integrations: [mdx(), sitemap(), preact()],
+    integrations: [mdx(), sitemap(), preact(), react()],
 });

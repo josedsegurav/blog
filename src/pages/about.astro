@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Code } from 'astro:components';
 import '@fontsource-variable/manrope';
+import Assistant from '../components/Assistant.astro';
 ---
 
 <!doctype html>
@@ -16,6 +17,8 @@ import '@fontsource-variable/manrope';
 		<Header />
 		<main id="about">
 			<h1>Welcome to ConsoleLogLife</h1>
+
+			<Assistant />
 
 			<Code id="console" code={`console.log("Hello World, Hello Life");`} lang="js" theme="dark-plus"/>
 
