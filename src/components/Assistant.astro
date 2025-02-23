@@ -14,8 +14,14 @@
 
 <script>
     import { GoogleGenerativeAI } from "@google/generative-ai";
+    import 'dotenv/config';
 
-    const genAI = new GoogleGenerativeAI("AIzaSyC8NdFntuXa83f0YTEzz6SUmgbgDrJWGu4");
+    const apiG = process.env.G_API;
+
+    if (!apiG) {
+        throw new Error("G_API environment variable is not defined");
+    }
+    const genAI = new GoogleGenerativeAI(apiG);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
     const handleClick = async () => {
