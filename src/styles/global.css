@@ -81,7 +81,7 @@ b {
   font-weight: 700;
 }
 a {
-  color: var(--dark-bg);
+  color: var(--dark-primary);
   text-decoration: none;
 }
 a:hover {
@@ -190,12 +190,12 @@ code {
 			width: 42%;
 		  }
 		}
-	  
+
 	  @keyframes end {
 		0% {
 		  width: 0;
 		}
-	  
+
 		100% {
 		  width: 3%;
 		}
@@ -204,7 +204,7 @@ code {
 		  from{border-right: 0.15em solid var(--dark-primary);}
 		  to{border-right: transparent;}
 	  }
-		  
+
 }
 
 

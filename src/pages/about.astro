@@ -1,58 +1,75 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Code } from 'astro:components';
-import '@fontsource-variable/manrope';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { Code } from "astro:components";
+import "@fontsource-variable/manrope";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main id="about">
-			<h1>Welcome to ConsoleLogLife</h1>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main id="about">
+      <h1>Welcome to ConsoleLogLife</h1>
 
-			<Code id="console" code={`console.log("Hello World, Hello Life");`} lang="js" theme="dark-plus"/>
+      <Code
+        id="console"
+        code={`console.log("Hello World, Hello Life");`}
+        lang="js"
+        theme="dark-plus"
+      />
 
-			<p>
-				Ever wondered what happens when you try debugging life while learning to code? Welcome to 
-				ConsoleLogLife, where personal growth meets programming challenges, and life transformations 
-				are documented in verbose mode.
-			</p>
-			<p>
-				Here, you'll find raw, unfiltered stories about navigating career shifts, embracing major life 
-				changes, and the beautiful chaos of learning to code while adulting. No sanitized success stories, 
-				just honest logs of failures, victories, and the orange Tic Tac-fueled moments in between.
-			</p>
-			<p>What to expect:</p>
-			<ul>
-				<li>Late-night coding adventures and their surprising life lessons</li>
-				<li>Real talk about career transitions and starting over</li>
-				<li>Stories about taking calculated risks and making life-changing decisions</li>
-				<li>Technical struggles and breakthroughs</li>
-				<li>The human side of professional transformation</li>
-			</ul>
-			<p>
-				This isn't your typical tech blog or lifestyle journal – it's a debug console for life's 
-				compilation errors and runtime exceptions. Whether you're contemplating a similar journey 
-				or just curious about someone else's process, you're welcome to explore these logs.
-			</p>
-			<Code code={
-			`try {
+      <p>
+        Hi!, my name is <strong>Jose</strong>, welcome personal blog.
+      </p>
+      <p>
+        Here, you'll find raw, unfiltered stories about navigating career
+        shifts, embracing major life changes, and the beautiful chaos of
+        learning to code while adulting. No sanitized success stories, just
+        honest logs of failures, victories, and the orange Tic Tac-fueled
+        moments in between.
+      </p>
+
+      <p>
+        I come from a diverse background. I've worked in sales and customer
+        service, owned a music studio where I recorded, mixed, and mastered
+        tracks, and even handled audio engineering for live shows and events. My
+        wife and I also ran a delivery business for a couple of years, which
+        helped us through the pandemic.
+      </p>
+
+      <p>
+        I've always been passionate about technology and understanding how
+        things work. I once "Frankensteined" a bass guitar by experimenting with
+        pickup changes (it was a small project, really!), and I built my own PC
+        from scratch, meticulously researching components and compatibility.
+      </p>
+
+      <p>
+        This blog is a space where I share my journey—the ups, downs, lessons,
+        experiences, and plenty of struggles. I want to track my growth and,
+        hopefully, create a record my family can be proud of.
+      </p>
+
+      <Code
+        code={`try {
     life.execute(dreams);
 } catch (reality) {
     learn.adapt.overcome();
-}`} lang="js" theme="dark-plus"/>
-			<p>Let's compile this journey together.</p>
-		</main>
-		<Footer />
-		<script>
-			import "../scripts/menu";
-		  </script>
-	</body>
+}`}
+        lang="js"
+        theme="dark-plus"
+      />
+      <p>Let's compile this journey together.</p>
+    </main>
+    <Footer />
+    <script>
+      import "../scripts/menu";
+    </script>
+  </body>
 </html>
