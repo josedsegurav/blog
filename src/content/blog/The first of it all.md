@@ -8,18 +8,15 @@ tags:
   - "Personal Growth"
 ---
 
-We are now 10 months in Winnipeg, Canada. A journey full of emotions, challenges and huge changes.
-It has been difficult, especially because we are far from our loved ones. But we have had a lot of help from friends, and the city has also been welcoming. But I have to say that winter here is looong and it gets really cold.
+We're now ten months into our journey in Winnipeg, Canada, a period filled with emotions, challenges, and significant changes. It's been tough, especially being far from loved ones, but we've received immense support from friends, and the city itself has been welcoming. I must admit, though, winter here is incredibly long and intensely cold!
 
-I am studying a Full Stack Web Development program at Red River College, and my wife is working in something quite related to her experience back in Ecuador. And of course we brought our puppy Akira with us.
+I'm currently enrolled in a Full Stack Web Development program at Red River College, and my wife is working in a field closely related to her experience in Ecuador. And, of course, our puppy Akira joined us on this adventure.
 
 ## Why Web Development?
 
-I was managing my music studio, and I was building my online presence, so I reached the point where I needed a website. I built it in Wordpress, [you can see it here](https://2espiral.wordpress.com/), and it was not that difficult to do. I know it is like just drag 'n drop, but i thought it would have been more of challenge.
+When I was managing my music studio and building my online presence, I realized I needed a website. I built it using WordPress ([you can see it here](https://2espiral.wordpress.com/)), and honestly, it wasn't as challenging as I expected—mostly drag-and-drop. While it initially looked great, it soon lacked personality and was difficult to make truly unique with the basic setup. Still, it served its purpose at the time, but it left me with a growing curiosity about building more styled and personalized websites.
 
-At first it was great to see how it looked and worked but soon enough it was lacking personality. And it was hard to make it unique with the basic setup, however, it was what I needed at that time. Since then I was left with a slight curiosity about how to build more styled websites and personal websites.
-
-Then, COVID hit the world. It was chaos with layoffs, no hopes for the airline industry in which I was working at the time. With all the concerns in my head I decided to dive into the web development industry. I joined a Full Stack short program because, why not aim for the high payed and remote job right?. Well, it was difficult! HTML and CSS was easy to be honest, but JavaScript, PHP (Laravel), Node, Postman, Axios... 😶. I see at those line of code and it's clear that I struggled a lot.
+Then COVID-19 hit. The world plunged into chaos with widespread layoffs, and the airline industry, where I was working, offered little hope. Amidst all the uncertainty, I decided to dive into web development. I joined a short Full Stack program, thinking, "Why not aim for a high-paying, remote job?" It was tough! HTML and CSS were straightforward, but JavaScript, PHP (Laravel), Node, Postman, Axios... 😶 Looking back at those lines of code, it's clear I struggled immensely.
 
 ```
 import axios from "axios"
@@ -38,4 +35,4 @@ export {
  sendEmail
 }
 ```
-And that is how I began my web dev journey. I like creating, and it is much more interesting when I can join it with all kind of areas like music, photography, games. But at the same time it feels there is so much to learn. Learning and practicing.
+And that's how my web development journey began. I love to create, and it's even more interesting when I can combine it with other passions like music, photography, and games. At the same time, it feels like there's an endless amount to learn, requiring constant learning and practice.
