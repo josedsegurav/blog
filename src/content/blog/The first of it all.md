@@ -1,7 +1,7 @@
 ---
 title: "The first of it all, a summary"
 description: "The first post, a summary of a radical change in our life."
-pubDate: "Jun 13 2025"
+pubDate: "Jun 20 2025"
 heroImage: "/20240920.jpg"
 tags:
   - "Life Changes"
