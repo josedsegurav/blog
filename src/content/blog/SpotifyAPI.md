@@ -9,6 +9,8 @@ tags:
 
 So, here is the first real thing I built. I wanted to see if I could fetch the Spotify API. It was my first time doing a fetch, generating a code verifier and a token.
 
+[Music App](https://github.com/josedsegurav/musicapp) GitHub repo.
+
 ![Login Screen](../../../public/4jul25/login.png)
 
 This time the documentation was easy to follow and understand. Once I had access, I could experiment. At first I just did a profile to display the top artists and top songs.
