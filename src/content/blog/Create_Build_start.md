@@ -8,7 +8,7 @@ tags:
   - "Personal Growth"
 ---
 
-I find it interesting to get to know the dev community in Winnipeg. It sometimes feels like something completely foreign to me, but also very important for any future project. I know I want to build something on my own—a startup, a business, a SaaS—I just have that urge to create something. I knew what that "something" was back in Ecuador; my music studio was my business. But changes are what make life fun, however, they also come with a lot of scary and uncertain challenges.
+I find it interesting to get to know the dev community in Winnipeg. It sometimes feels like something completely foreign to me, but also very important for any future project. I know I want to build something, my own—a startup, a business, a SaaS—I just have that urge to create something. I knew what that "something" was back in Ecuador; my music studio was my business. Changes are what make life fun, however, they also come with a lot of scary and uncertain challenges.
 
 I recently attended a Plugged In event organized by Tech Manitoba. In fact, it was my second Plugged In event. But I particularly enjoyed this one. It was about Career Pathing in Manitoba's Start-Up & Scale-Up Scene, featuring two inspiring founders, Klaudia McDonald and Matt Dirks, with lots of experience, positive and critical thinking—a truly valuable meeting.
 
